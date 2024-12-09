@@ -16,6 +16,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            position: relative;
         }
         .container {
             background-color: #16213e;
@@ -50,9 +51,49 @@
         .member-id {
             color: #e0e0e0;
         }
+        .btn-top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #e94560;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-top-right:hover {
+            background-color: #ff6f81;
+        }
+        .languages {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #0f3460;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .languages h2 {
+            color: #f0f0f0;
+            font-size: 1.5em;
+        }
+        .languages ul {
+            list-style: none;
+            padding: 0;
+        }
+        .languages ul li {
+            padding: 5px 0;
+            color: #e0e0e0;
+        }
     </style>
 </head>
 <body>
+    <!-- Button at the Top Right -->
+
+    <button class="btn-top-right" onclick="window.location.href='background.html'">Presentation</button>
+
     <div class="container">
         <h1>Venom Group</h1>
         <div class="member">
@@ -71,6 +112,22 @@
             <div class="member-name">Ba rayan Abdullah</div>
             <div class="member-id">1221301726</div>
         </div>
+
+        <!-- Languages Section -->
+        <div class="languages">
+            <h2>Languages Used</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python-Django</li>
+            </ul>
+        </div>
     </div>
+
+    <script>
+        function handlePermission() {
+            alert('Permission granted!');
+        }
+    </script>
 </body>
 </html>
