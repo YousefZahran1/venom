@@ -20,6 +20,7 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             max-width: 900px;
             margin: auto;
+            position: relative;
         }
         h1, h2 {
             color: #f0f0f0;
@@ -43,23 +44,34 @@
         ul li {
             margin-bottom: 10px;
         }
+        .top-left-image {
+            position: absolute;
+            top: 10px; /* Adjust this value to move image up/down */
+            left: -200px; /* Adjust this value to move image left/right */
+            width: 150px; /* Adjust width as needed */
+            z-index: 1 ; /* Ensures it stays above background */
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="image_2024-12-11_024443911-removebg-preview.png" alt="Python logo" class="top-left-image">
         <h1>Background of Python and Django</h1>
 
         <section>
             <h2 class="section-title">1. History of Python and Django</h2>
             <p>
-                Python was founded by Guido van Rossum in 1991 with the aim of creating a language that is easy to read, understand, and write. Django, built on Python, was created in 2005 by Adrian Holovaty and Simon Willison to streamline the creation of database-driven web applications.
+                The underlying language to Django is actually Python which was founded by Guido van Rossum in 1991 primarily with the aim of providing language that is easy to read, understand and write. They will not give as much emphasis to readability or simplicity as this format will allow developers to write out complex thought processes in fewer lines. Inspiration for Python’s design was taken from languages such as ABC, C, and Modula-3; the language aims at newcomers as well as advanced level programmers.        
+                 </p>
+            <p>Django web framework is created in 2005 by Adrian Holovaty and Simon Willison when both worked for a newspaper in New Zealand. Originally, its purpose was to streamline the creation of intricate Web 2.0 and database-based sites. The decision to create Django was based on the relevant objectives such as the need for exceptionally swift development, reusability and adhering to the principles of the DRY (or Don’t Repeat Yourself) principle. It is designed to adhere to the Model-View-Template (MVT) web application architecture to have steadfast maintenance and extendibility. 
             </p>
+            <p>Consequently, since both are open-source, their qualities improve as a vast number of people can provide improvements, so they are versatile to be used in different domains such as web, machine learning, data analysis, and artificial intelligence, among others.</p>
         </section>
 
         <section>
             <h2 class="section-title">2. Language Category and Programming Styles</h2>
             <p>
-                Python is an interpreted, script-based language that supports multiple paradigms, including:
+                Python is an interpreted, script-based, prototype programming language which supports most of the paradigms. Due to the possibility of operating on sequential instruction it can be aligned mainly with the imperative/procedural. Django takes over this feature from Python and is aimed to simplify web development within this approach.
             </p>
             <ul>
                 <li><strong>Imperative/Procedural Programming:</strong> Focuses on sequential steps and instructions.</li>
@@ -69,6 +81,8 @@
 
         <section>
             <h2 class="section-title">3. Applications of Python and Django</h2>
+
+ <p>Python and Django are very popular for a number of reasons thanks to their flexibility for use in many different areas, simplicity, as well as their ability to be easily scalable. Below are the types of applications they excel at and sample examples: </p>       
             <ul>
                 <li><strong>Web Applications:</strong> Instagram, Pinterest</li>
                 <li><strong>Educational Platforms:</strong> Coursera, EdX</li>
@@ -79,12 +93,14 @@
         <section>
             <h2 class="section-title">4. Popularity</h2>
             <p>
-                Python and Django are among the most popular tools for developers. In 2024, Django is used by 74% of Python developers and supports over 1.8 million websites worldwide.
-            </p>
+                Django is very popular in 2024 especially in web development. It is used by 74% of Python developers, which makes it chronically popular for building strong web applications. Also, it supports more than 1.8 million websites across the world. The framework is easy to implement, highly extensible, and can connect with current real-world elements such as APIs and container orchestration.             </p>
+            <img src="image.png" alt="Django's usage statistics in 2024">
+
         </section>
 
         <section>
             <h2 class="section-title">5. Implementation Method</h2>
+            <p>Python and Django use a combination of implementation methods to balance performance, flexibility, and developer productivity: </p>
             <ul>
                 <li><strong>Hybrid Implementation:</strong> Compiles to bytecode, interpreted by the Python Virtual Machine (PVM).</li>
                 <li><strong>Just-In-Time Compilation (JIT):</strong> Optionally speeds up performance for high-traffic applications.</li>
@@ -93,8 +109,9 @@
 
         <section>
             <h2 class="section-title">6. Programming Environments</h2>
+            <p>Both Python and Django have numerous programming environments to support their developers for coding, debugging and for deploying their applications. Below are the most popular environments: </p>
             <ul>
-                <li><strong>IDEs:</strong> VS Code, Spyder</li>
+                <li><strong>.Integrated Development Environments (IDEs)</strong> VS Code, Spyder</li>
                 <li><strong>Lightweight Editors:</strong> Sublime Text, Atom</li>
                 <li><strong>Command-Line Tools:</strong> IDLE, Django Shell</li>
             </ul>
